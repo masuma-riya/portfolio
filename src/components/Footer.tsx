@@ -1,31 +1,29 @@
-import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
-import { logo } from "../assets";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { FadeIn } from "./FadeIn";
 
 const Footer = () => {
   return (
     <FadeIn className="w-full py-20 h-auto border-b-[1px] border-b-black grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-4 gap-8">
       <div className="w-full h-full flex flex-col gap-8">
-        <img className="w-32" src={logo} alt="logo" />
-        <div className="flex gap-4">
-          <a href="https://www.youtube.com/@reactjsBD" target="_blank">
-            <span className="bannerIcon">
-              <FaYoutube />
+        <div className="flex gap-4 md:mt-11 lg:mt-24">
+          <a href="https://github.com/masuma-riya" target="_blank">
+            <span className="bannerIcon text-3xl">
+              <FaGithub />
             </span>
           </a>
           <a
-            href="https://www.linkedin.com/in/noor-mohammad-ab2245193/"
+            href="https://www.linkedin.com/in/masuma-akter-riya/"
             target="_blank"
           >
-            <span className="bannerIcon">
+            <span className="bannerIcon text-3xl">
               <FaLinkedinIn />
             </span>
           </a>
-          <a href="https://www.facebook.com/Noorlalu143/" target="_blank">
-            <span className="bannerIcon">
+          {/* <a href="https://web.facebook.com/masumariyaaa/" target="_blank">
+            <span className="bannerIcon text-3xl">
               <FaFacebookF />
             </span>
-          </a>
+          </a> */}
         </div>
       </div>
       <div className="w-full h-full">

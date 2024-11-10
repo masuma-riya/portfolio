@@ -1,6 +1,6 @@
-import { AiFillAppstore } from "react-icons/ai";
-import { FaMobile, FaGlobe } from "react-icons/fa";
-import { SiProgress, SiAntdesign } from "react-icons/si";
+import { FaUserEdit } from "react-icons/fa";
+import { SiProgress } from "react-icons/si";
+import { GiArtificialHive } from "react-icons/gi";
 import Card from "./Card";
 import Title from "./Title";
 import { FadeIn } from "./FadeIn";
@@ -12,43 +12,22 @@ const Feature = () => {
       className="w-full py-20 border-b-[1px] border-b-gray-700"
     >
       <FadeIn>
-        <Title title="Features" des="What I Do" />
+        <Title title="Features" des="What I Do?" />
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20">
           <Card
-            title="Business Stratagy"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-      hic consequuntur eum repellendus ad."
-            icon={null}
+            title="Frontend Development"
+            des="Creating user-facing functionalities and interfaces using technologies like React, JavaScript, Tailwind CSS, HTML, CSS"
+            icon={<GiArtificialHive />}
           />
           <Card
-            title="App Development"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-      hic consequuntur eum repellendus ad."
-            icon={<AiFillAppstore />}
+            title="UI/UX Design"
+            des="Designing intuitive and visually appealing user interfaces with a focus on user experience and interaction."
+            icon={<FaUserEdit />}
           />
           <Card
-            title="SEO Optimisation"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-      hic consequuntur eum repellendus ad."
+            title="Maintenance & Support"
+            des="Providing ongoing support, troubleshooting issues, and implementing updates to ensure application reliability."
             icon={<SiProgress />}
-          />
-          <Card
-            title="Mobile Development"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-      hic consequuntur eum repellendus ad."
-            icon={<FaMobile />}
-          />
-          <Card
-            title="UX Design"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-      hic consequuntur eum repellendus ad."
-            icon={<SiAntdesign />}
-          />
-          <Card
-            title="Hosting Websites"
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-      hic consequuntur eum repellendus ad."
-            icon={<FaGlobe />}
           />
         </div>
       </FadeIn>
